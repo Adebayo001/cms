@@ -2,6 +2,8 @@
 
     if(isset($_GET['category'])){
         $post_category_id = $_GET['category'];
+    } else {
+        header("Location: /");
     }
  ?>
 
@@ -41,8 +43,14 @@
             <div class="col-lg-8">
                 <?php
                 
-                 $query = "SELECT * FROM posts WHERE post_category_id = $post_category_id";
+                 $query = "SELECT * FROM posts WHERE post_category_id = $post_category_id AND post_status='Published'";
                  $select_all_posts_query = mysqli_query($connection, $query);
+
+                 if(mysqli_num_rows($select_all_posts_query) < 1){
+
+                    echo "<h2>No Post Available</h2>";
+
+                 } else {
                 
                 while($row = mysqli_fetch_assoc($select_all_posts_query)){
                     $post_title = $row['post_title'];
@@ -100,7 +108,7 @@
                         <br><br> <br>
                     </div>
                 </div>
-                <?php } ?>
+                <?php } } ?>
             </div>
             <?php include("includes/sidebar.php"); ?>
         </div>

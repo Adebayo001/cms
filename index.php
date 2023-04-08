@@ -41,6 +41,11 @@
                 $count_query = "SELECT * FROM posts WHERE post_status = 'Published'";
                 $post_count_query = mysqli_query($connection, $count_query);
                 $count = mysqli_num_rows($post_count_query);
+
+                if($count < 1) {
+
+                    echo "<h2>No Post Available</h2>";
+                } else {
                 $count = ceil($count / $page_per);
                 
                 $query = "SELECT * FROM posts WHERE post_status = 'Published' LIMIT $page_1, $page_per";
@@ -104,7 +109,7 @@
                         <br><br> <br>
                     </div>
                 </div> <br>
-                <?php } ?>
+                <?php } } ?>
                 <!-- Basic Pagination -->
                         <nav aria-label="Page navigation">
                           <ul class="pagination justify-content-center">

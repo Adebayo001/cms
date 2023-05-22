@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteRule ^(index|contact|blog)$ $1.php [NC,L]
+
+RewriteRule ^post/(\d+)$ post.php?p_id=$1 [NC,L]
+
+RewriteRule ^(includes/login|includes/register)$ $1.php [NC,L]
+

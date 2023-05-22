@@ -60,7 +60,7 @@
                         <div class="col-lg-12">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <img src="admin/images/<?php echo $post_image; ?>" alt="">
+                                    <img src="/cms/admin/images/<?php echo $post_image; ?>" alt="">
                                 </div>
                                 <div class="down-content">
                                     <span>Lifestyle</span>

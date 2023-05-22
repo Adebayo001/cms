@@ -65,13 +65,13 @@
                         <div class="col-lg-12">
                             <div class="blog-post">
                                 <div class="blog-thumb">
-                                    <a href="post.php?p_id=<?php echo $post_id ?>" class="href">
+                                    <a href="post/<?php echo $post_id ?>" class="href">
                                         <img class="img-responsive" src="admin/images/<?php echo $post_image; ?>" alt="">
                                     </a>
                                 </div>
                                 <div class="down-content">
                                     <!--                                    <span>Lifestyle</span>-->
-                                    <a href="post.php?p_id=<?php echo $post_id ?>">
+                                    <a href="post/<?php echo $post_id ?>">
                                         <h4><?php echo $post_title; ?></h4>
                                     </a>
                                     <ul class="post-info">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="main-button">
-                                <a href="post.php?p_id=<?php echo $post_id ?>">Read More</a>
+                                <a href="post/<?php echo $post_id ?>">Read More</a>
                             </div>
                         </div>
                         <br><br> <br>

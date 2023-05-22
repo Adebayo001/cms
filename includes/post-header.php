@@ -14,13 +14,13 @@
     <title>Stand CSS Blog by TemplateMo</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/cms/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-stand-blog.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="/cms/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/cms/assets/css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href="/cms/assets/css/owl.css">
 
   </head>
 
